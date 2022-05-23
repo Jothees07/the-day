@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  /* background: url("/images/digital-art-neon-mountains-lake-wallpaper-preview.jpg") no-repeat center;
+  background-size: cover; */
+  background: #DAE2F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Dancing Script', cursive;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.cartoonR{
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+  z-index: 1000;
+  transform:rotateY(20deg)
+}
+.cartoonL{
+  position: absolute;
+  left: 70px;
+  bottom: 50px;
+  z-index: 1000;
+  transform:rotateY(-20deg)
+}
+
+h1,p{
+  margin: 0 5px;
+  color: white;
+  overflow: hidden;
+}

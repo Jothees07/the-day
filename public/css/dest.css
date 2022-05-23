@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  
+}
+.dest_main{
+    /* background: url("https://c1.wallpaperflare.com/preview/545/996/928/blue-box-container-gift.jpg") no-repeat center;
+  background-size: cover; */
+  
+    background: rgb(193, 193, 214);
+    background: linear-gradient(180deg, rgb(193, 193, 214) 0%, rgb(193, 193, 214) 55%, rgb(255, 255, 255) 100%); 
+
+/* background: rgb(130,7,134);
+background: linear-gradient(180deg, rgba(130,7,134,1) 0%, rgba(204,121,230,1) 55%, rgba(243,203,251,1) 100%); */
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Odibee Sans', cursive;
+
+}
+
+img{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+

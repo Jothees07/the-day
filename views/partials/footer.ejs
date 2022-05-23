@@ -1,0 +1,70 @@
+<canvas class="background"></canvas>
+<div class="container footer">
+    <footer class="align-items-center py-3 my-4 border-top">
+      <div class="align-items-center" >
+        <p class="text-muted" style="text-align: center;">&copy; Designed by Jothees</p>
+      </div>
+    </footer>
+</div>
+<script>
+    $(".todoInput").hide()
+    function showInput(){
+        $(".addItem svg").hide(500)
+        $(".todoInput").show(500)
+    }   
+</script>
+<script>
+  var particles = Particles.init({
+    selector: '.background',
+    maxParticles: 84,
+    color: ['#FFFFFF', '#404B69'],
+    connectParticles: true,
+    responsive: [{
+      breakpoint: 405,
+      options: {
+        color:['#FFFFFF', '#404B69'],
+        maxParticles: 15,
+        connectParticles: true
+      }
+    }]
+  });
+</script>
+<script>
+  // var List = []
+  // localStorage.setItem("List", JSON.stringify(List));
+  // var offlineList = JSON.parse(localStorage.getItem("offlineList"))
+  // function capture(){
+  //   offlineList[offlineList.length] = String(document.getElementById('offline').value);
+  //   localStorage.setItem("offlineList", JSON.stringify(offlineList));
+  // }
+  // console.log(JSON.parse(localStorage.getItem("offlineList")))
+  let todos = []
+  const todoForm = document.getElementById('todoForm');
+  const todoInput = document.getElementById('offline').value;
+  todoForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    capture(todoInput);
+  });
+  function addToLocalStorage(todos) {
+  // conver the array to string then store it.
+  localStorage.setItem('todos', JSON.stringify(todos));
+  // render them to screen
+  renderTodos(todos);
+}
+  function capture(item){
+    if (item !== '') {
+    
+      const todo = {
+        name: item,
+        completed: false
+      };
+      todos.push(todo);
+      addToLocalStorage(todos);
+      todoInput= '';
+    }
+  }
+    console.log(localStorage)
+
+</script>
+</body>
+</html>

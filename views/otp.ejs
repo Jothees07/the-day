@@ -1,0 +1,37 @@
+<%- include('partials/header') -%>
+
+<div class="main text-center" style="height: 100%;">
+  
+    <main class="form-signin">
+      <h1 class="text-center" style="color: rgb(2, 2, 58);" id="text"></h1>  <br>
+        <form action="/destination" method="post">
+          
+          <div class="form-floating">
+            <input type="otp" class="form-control" name="otp" id="floatingInput" placeholder="Secret code" autocomplete="off">
+            <label for="floatingInput">Secret code</label>
+          </div>
+          <br>
+      
+          <button class="w-50 btn btn-md btn-primary" type="submit">Decode</button>
+
+
+          <br>
+
+        </form>
+
+    </main>
+
+    <div class="cartoonL">
+     
+      <img src="/images/picwish.png" height="150px" width="150px" alt="">
+    </div>
+
+    <div class="cartoonR">
+     
+      <img src="/images/picwish.png" height="150px" width="150px" alt="">
+    </div>
+
+    <script src="js/letter.js"></script>
+
+
+</div>
